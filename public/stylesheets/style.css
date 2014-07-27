@@ -36,8 +36,16 @@ p {
 	padding: 5px;
 	margin:10px 0;
 }
-.btn:hover{
+.btn:hover {
 	background-color: #f96262;
 }
 
+iframe {
+	width: 80%;
+	height: auto;
+}
+
+.video {
+	text-align: center;
+}
 

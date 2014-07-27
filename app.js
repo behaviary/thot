@@ -24,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
+
+
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
@@ -38,15 +40,13 @@ app.get('/', function(req, res){
 });
 
 app.get('/upload', function(req, res){
-  res.render('upload', {
+  res.render('upload.jade', {
     title: 'Upload'
   });
 });
 
 app.get('/live', function(req, res){
-  res.render('live', {
-    title: 'Live'
-  });
+  console.log("This live was serve");
 });
 
 /// error handlers

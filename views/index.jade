@@ -2,11 +2,11 @@ extends layout
 
 block content
   img(src="/images/logo.png")
-  p #{title}
+  h1 #{title}
 
   #home-buttons
-    button(id="upload", href="./upload").btn upload
-    button(id="live", href="./live").btn live
+    a(id="upload", href="/upload").btn upload
+    a(id="live", href="/live").btn live
 
 
 
